@@ -120,7 +120,7 @@ NSString * const kYelpTokenSecret = @"LgyYWTEBumu4kDCthJCHeEwLDcw";
 }
 
 - (void) onFilterButton {
-    FiltersViewController *fvc = [[FiltersViewController alloc] init];
+    FiltersViewController *fvc = [[FiltersViewController alloc] initWithNibName:@"FiltersViewController" bundle:nil];
     fvc.delegate = self;
     UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:fvc];
     [self presentViewController:nvc animated:YES completion:nil];

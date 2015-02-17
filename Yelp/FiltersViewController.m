@@ -200,7 +200,7 @@
 }
 
 - (void) initRadius {
-    self.selectedRadius = @10000;
+    self.selectedRadius = @10;
 }
 
 @end
